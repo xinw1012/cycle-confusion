@@ -1,0 +1,35 @@
+_BASE_: "../Base-RCNN-FPN.yaml"
+MODEL:
+  META_ARCHITECTURE: "SSRCNN"
+  WEIGHTS: "detectron2://ImageNetPretrained/MSRA/R-50.pkl"
+  MASK_ON: False
+  RESNETS:
+    DEPTH: 50
+  ROI_HEADS:
+    NAME: "StandardROIHeadsSS"
+    NUM_CLASSES: 10
+  SS:
+    FEAT_LEVEL: "res4"
+    NAME: ["build_cycle_head"]
+    LOSS_SCALE: 0.01
+    RATIO: 2.0
+    COEF: -1.0
+DATASETS:
+  TRAIN: ("bdd_tracking_2k_train_daytime",)
+  TEST: ("bdd_tracking_2k_val_night", )
+SOLVER:
+  IMS_PER_BATCH: 8
+#   IMS_PER_BATCH: 16
+  BASE_LR: 0.02
+  STEPS: (31200, 41600,)
+  MAX_ITER: 45500
+  WARMUP_ITERS: 5000
+INPUT:
+  MIN_SIZE_TRAIN: (800,)
+  RANDOM_FLIP: "none"
+  CROP:
+    ENABLED: True
+DATALOADER:
+  SAMPLER_TRAIN: "PairTrainingSampler"
+  PAIR_OFFSET_RANGE: 10
+OUTPUT_DIR: "checkpoints/bdd_tracking_2k/daytime/R50_FPN_cycle_consist"

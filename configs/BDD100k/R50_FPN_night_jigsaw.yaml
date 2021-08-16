@@ -1,0 +1,31 @@
+_BASE_: "../Base-RCNN-FPN.yaml"
+MODEL:
+  META_ARCHITECTURE: "SSRCNN"
+  WEIGHTS: "detectron2://ImageNetPretrained/MSRA/R-50.pkl"
+  MASK_ON: False
+  RESNETS:
+    DEPTH: 50
+  ROI_HEADS:
+    NUM_CLASSES: 10
+  SS:
+    FEAT_LEVEL: "res4"
+    NAME: ["build_jigsaw_head"]
+    LOSS_SCALE: 1.0
+    RATIO: 0.5
+    NUM_CLASSES: 24
+DATASETS:
+  TRAIN: ("bdd_tracking_2k_train_night",)
+  TEST: ("bdd_tracking_2k_val_daytime",)
+SOLVER:
+  # the size of the BDD tracking daytime is about 2x of the BDD100k dataset
+  # for initial experiments, this schedule will be approximately, 0.5X schedule
+  # ~5 epochs
+  IMS_PER_BATCH: 16
+  BASE_LR: 0.01
+  STEPS: (36000, 48000,)
+  MAX_ITER: 52500
+INPUT:
+  MIN_SIZE_TRAIN: (800,)
+  CROP:
+    ENABLED: True
+OUTPUT_DIR: "checkpoints/bdd_tracking_2k/night/R50_FPN_jigsaw"

@@ -1,0 +1,21 @@
+_BASE_: "../Base-RCNN-FPN.yaml"
+MODEL:
+  WEIGHTS: "detectron2://ImageNetPretrained/MSRA/R-50.pkl"
+  MASK_ON: False
+  RESNETS:
+    DEPTH: 50
+  ROI_HEADS:
+    NUM_CLASSES: 3
+DATASETS:
+  TRAIN: ("waymo_front_right_train",)
+  TEST: ("bdd_tracking_2k_val_night_3cls",)
+SOLVER:
+  IMS_PER_BATCH: 16
+  BASE_LR: 0.02
+  STEPS: (36000, 48000,)
+  MAX_ITER: 52500
+INPUT:
+  MIN_SIZE_TRAIN: (800,)
+  CROP:
+    ENABLED: True
+OUTPUT_DIR: "checkpoints/waymo_reported/R50_FPN_front_right"
