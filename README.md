@@ -1,9 +1,9 @@
-# Robust Object Detection via Instance-Level Cycle Confusion 
-This repo contains the implementation of the ICCV 2021 paper, [Robust Object Detection via Instance-Level Cycle Confusion](https://arxiv.org/abs/2104.08381).
+# Robust Object Detection via Instance-Level Temporal Cycle Confusion 
+This repo contains the implementation of the ICCV 2021 paper, [Robust Object Detection via Instance-Level Temporal Cycle Confusion](https://arxiv.org/abs/2104.08381).
 
 
 
-![Screenshot](figs/cycle_confusion_arch.pdf)
+![Screenshot](figs/cycle_confusion_arch.png)
 
 
 Building reliable object detectors that are
@@ -181,3 +181,16 @@ python3 -m tools.train_net --config-file [config_file] --num-gpus [num] --eval-o
 | + Cycle Consistency | 9.11 | 17.92 | 7.98 | 1.78 | 9.36 | 19.18 | [link](configs/Waymo/R50_FPN_front_right_cycle_cons.yaml)  | [link](https://drive.google.com/file/d/1CfpnRwakAiC6OmcOUHacyxlkd1gBUYZC/view?usp=sharing) |
 | + Cycle Confusion   | 9.99 | 20.58 | 8.30 | 2.18 | 10.25 | 20.54 | [link](configs/Waymo/R50_FPN_front_right_cycle_conf.yaml)  | [link](https://drive.google.com/file/d/13mCXi-lEU-AwJsMPACH5PjQT34Em2PPZ/view?usp=sharing) |
 
+
+
+## Citation
+If you find this repository useful for your publications, please consider citing our paper.
+
+```
+@article{wang2021robust,
+  title={Robust Object Detection via Instance-Level Temporal Cycle Confusion},
+  author={Wang, Xin and Huang, Thomas E and Liu, Benlin and Yu, Fisher and Wang, Xiaolong and Gonzalez, Joseph E and Darrell, Trevor},
+  journal={International Conference on Computer Vision (ICCV)},
+  year={2021}
+}
+```
