@@ -158,7 +158,7 @@ python3 -m tools.train_net --config-file [config_file] --num-gpus [num] --eval-o
 | Faster R-CNN        | 19.14 | 33.04 | 19.16 | 5.38 | 21.42 | 40.34 | [link](configs/BDD100K/R50_FPN_night.yaml)       |     [link](https://drive.google.com/file/d/1EWexjTuVGok6VjbFzBF8CaotejjIb9cd/view?usp=sharing)       |
 | + Rotation          | 19.07 | 33.25 | 18.83 | 5.53 | 21.32 | 40.06 | [link](configs/BDD100K/R50_FPN_night_rot.yaml)    | [link](https://drive.google.com/file/d/1TNWrVyMEhG4iNltCBWK2fgJ0K7P6zTRc/view?usp=sharing) |
 | + Jigsaw            | 19.22 | 33.87 | 18.71 | 5.67 | 22.35 | 38.57 | [link](configs/BDD100K/R50_FPN_night_jigsaw.yaml)       |[link](https://drive.google.com/file/d/188qwaDlzmja1_fvqap6wnBAYyEWxifSu/view?usp=sharing)|
-| + Cycle Consistency | 18.89 | 33.49 | 18.31 | 5.82 | 21.00 | 39.13 | [link](configs/BDD100K/R50_FPN_night_cycle_consist.yaml)|   [link](https://drive.google.com/file/d/1lAB1wDZ87u6rE13J8cPLuIYf6fEZHjJV/view?usp=sharing)         |
+| + Cycle Consistency | 18.89 | 33.49 | 18.31 | 5.82 | 21.01 | 39.13 | [link](configs/BDD100K/R50_FPN_night_cycle_consist.yaml)|   [link](https://drive.google.com/file/d/1lAB1wDZ87u6rE13J8cPLuIYf6fEZHjJV/view?usp=sharing)         |
 | + Cycle Confusion   | 19.57 | 34.34 | 19.26 | 6.06 | 22.55 | 38.95 | [link](configs/BDD100K/R50_FPN_night_cycle_conf.yaml)       |   [link](https://drive.google.com/file/d/1Byru-K5GYCK57Hr2ItAYvXcmGlNkiJsL/view?usp=sharing)         |
 
 **Waymo Front Left to BDD100K Night.**
