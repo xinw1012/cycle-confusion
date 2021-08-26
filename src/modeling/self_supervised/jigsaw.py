@@ -4,13 +4,11 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torchvision.transforms as transforms
 
-from detectron2.structures import ImageList#, crop_tensor
-
 import os
 
 from .build import SSHEAD_REGISTRY
 from .ss_layers import Bottleneck, conv1x1, conv3x3
-from ..utils.image_list import crop_tensor
+from ..utils.image_list import ImageList, crop_tensor
 
 
 class JigsawHead(nn.Module):

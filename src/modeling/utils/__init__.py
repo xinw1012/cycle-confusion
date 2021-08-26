@@ -1,1 +1,1 @@
-from .image_list import crop_tensor
+from .image_list import ImageList, crop_tensor
