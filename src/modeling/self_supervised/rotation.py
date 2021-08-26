@@ -1,4 +1,3 @@
-from detectron2.structures import image_list
 import numpy as np
 import torch
 import torch.nn as nn
@@ -6,6 +5,7 @@ import torch.nn.functional as F
 
 from .build import SSHEAD_REGISTRY
 from .ss_layers import Bottleneck, conv1x1, conv3x3
+from ..utils.image_list import ImageList, crop_tensor
 
 
 class RotationHead(nn.Module):
