@@ -1,0 +1,19 @@
+.DS_Store
+__pycache__
+src/__pycache__
+src/*/__pycache__
+src/*/*/__pycache__
+*/.DS_Store
+.vscode-upload.json
+.vscode/*
+
+# venv
+cyc-conf
+
+# checkpoints
+checkpoints
+
+# datasets
+datasets/bdd100k
+datasets/bdd-tracking-2k
+datasets/waymo
