@@ -165,21 +165,21 @@ python3 -m tools.train_net --config-file [config_file] --num-gpus [num] --eval-o
 
 | Model               | AP    | AP50  | AP75  | APs  | APm   | APl   | Config | Checkpoint |
 |---------------------|-------|-------|-------|------|-------|-------|:------:|:----------:|
-| Faster R-CNN        | 10.07 | 19.62 | 9.05 | 2.67 | 10.81 | 18.62 | [link](configs/Waymo/R50_FPN_front_left.yaml) | [link](https://drive.google.com/file/d/1ElCUJwAYMSAqU7Tdxr5B_QiFYLr5Q49b/view?usp=sharing) |
-| + Rotation          | 11.34 | 23.12 | 9.65 | 3.53 | 11.73 | 21.60 | [link](configs/Waymo/R50_FPN_front_left_rot.yaml) | [link](https://drive.google.com/file/d/1XersN1sgasNfo7VhZWUddujCcbJhoTDD/view?usp=sharing) |
-| + Jigsaw            | 9.86 | 19.93 | 8.40 | 2.77 | 10.53 | 18.82 | [link](configs/Waymo/R50_FPN_front_left_jig.yaml) | [link](https://drive.google.com/file/d/19UQUPz0cpFmOyFxAWj2VX545qk_0Qc9J/view?usp=sharing) |
-| + Cycle Consistency | 11.55 | 23.44 | 10.00 | 2.96 | 12.19 | 21.99 | [link](configs/Waymo/R50_FPN_front_left_cycle_cons.yaml) | [link](https://drive.google.com/file/d/1Tqzbxx0B7DnjNs6gXls03aXNsy_vmN7G/view?usp=sharing) |
-| + Cycle Confusion   | 12.27 | 26.01 | 10.24 | 3.44 | 12.22 | 23.56 | [link](configs/Waymo/R50_FPN_front_left_cycle_conf.yaml) | [link](https://drive.google.com/file/d/1dKOgcLUpas6MXbir41YCwO-aISgTazpG/view?usp=sharing) |
+| Faster R-CNN        | 10.07 | 19.62 | 9.05 | 2.67 | 10.81 | 18.62 | [link](configs/Waymo/R50_FPN_front_left.yaml) | [link](https://drive.google.com/file/d/1c3UdAs7CFKChSejgsX6JB6niTC67Ghau/view?usp=sharing) |
+| + Rotation          | 11.34 | 23.12 | 9.65 | 3.53 | 11.73 | 21.60 | [link](configs/Waymo/R50_FPN_front_left_rot.yaml) | [link](https://drive.google.com/file/d/1hEUBOKy-u-VfO_KGOrssnra5XFKDO42W/view?usp=sharing) |
+| + Jigsaw            | 9.86 | 19.93 | 8.40 | 2.77 | 10.53 | 18.82 | [link](configs/Waymo/R50_FPN_front_left_jig.yaml) | [link](https://drive.google.com/file/d/11y65IfAokADarjBdFj3cZRWC3w73V_Ys/view?usp=sharing) |
+| + Cycle Consistency | 11.55 | 23.44 | 10.00 | 2.96 | 12.19 | 21.99 | [link](configs/Waymo/R50_FPN_front_left_cycle_cons.yaml) | [link](https://drive.google.com/file/d/1bqY8ODCu4G8Z9ZEHxmHXZ70TKaP37fC3/view?usp=sharing) |
+| + Cycle Confusion   | 12.27 | 26.01 | 10.24 | 3.44 | 12.22 | 23.56 | [link](configs/Waymo/R50_FPN_front_left_cycle_conf.yaml) | [link](https://drive.google.com/file/d/1qMIUU-_HrEdtyCnBekJUN12YCNu23S8M/view?usp=sharing) |
 
 **Waymo Front Right to BDD100K Night.**
 
 | Model               | AP   | AP50  | AP75 | APs  | APm   | APl   | Config | Checkpoint |
 |---------------------|------|-------|------|------|-------|-------|:------:|:----------:|
-| Faster R-CNN        | 8.65 | 17.26 | 7.49 | 1.76 | 8.29 | 19.99 | [link](configs/Waymo/R50_FPN_front_right.yaml)  | [link](https://drive.google.com/file/d/1uScVSpFe4zLuGfyDiAApBO7nqhP-EvHK/view?usp=sharing) |
-| + Rotation          | 9.25 | 18.48 | 8.08 | 1.85 | 8.71 | 21.08 | [link](configs/Waymo/R50_FPN_front_right_rot.yaml)  | [link](https://drive.google.com/file/d/14nOrpORe6ohNm162g9ThspziTUnbw4Dn/view?usp=sharing) |
-| + Jigsaw            | 8.34 | 16.58 | 7.26 | 1.61 | 8.01 | 18.09 | [link](configs/Waymo/R50_FPN_front_right_jig.yaml)  | [link](https://drive.google.com/file/d/1V30OLYoAKOhGg6RH5BtXP5Xdz2YQVXGE/view?usp=sharing) |
-| + Cycle Consistency | 9.11 | 17.92 | 7.98 | 1.78 | 9.36 | 19.18 | [link](configs/Waymo/R50_FPN_front_right_cycle_cons.yaml)  | [link](https://drive.google.com/file/d/1CfpnRwakAiC6OmcOUHacyxlkd1gBUYZC/view?usp=sharing) |
-| + Cycle Confusion   | 9.99 | 20.58 | 8.30 | 2.18 | 10.25 | 20.54 | [link](configs/Waymo/R50_FPN_front_right_cycle_conf.yaml)  | [link](https://drive.google.com/file/d/13mCXi-lEU-AwJsMPACH5PjQT34Em2PPZ/view?usp=sharing) |
+| Faster R-CNN        | 8.65 | 17.26 | 7.49 | 1.76 | 8.29 | 19.99 | [link](configs/Waymo/R50_FPN_front_right.yaml)  | [link](https://drive.google.com/file/d/1QZ6vExrhrudRidJZqvq-XwOtKQECXaEI/view?usp=sharing) |
+| + Rotation          | 9.25 | 18.48 | 8.08 | 1.85 | 8.71 | 21.08 | [link](configs/Waymo/R50_FPN_front_right_rot.yaml)  | [link](https://drive.google.com/file/d/1vLQMBCUcNHJR4J5Ibp6xH-q1EPx_ns3Y/view?usp=sharing) |
+| + Jigsaw            | 8.34 | 16.58 | 7.26 | 1.61 | 8.01 | 18.09 | [link](configs/Waymo/R50_FPN_front_right_jig.yaml)  | [link](https://drive.google.com/file/d/1FUn6ligx0d6lQbMjMuR42yilzZzBzXMd/view?usp=sharing) |
+| + Cycle Consistency | 9.11 | 17.92 | 7.98 | 1.78 | 9.36 | 19.18 | [link](configs/Waymo/R50_FPN_front_right_cycle_cons.yaml)  | [link](https://drive.google.com/file/d/1lTrLSbqojLBrEEpnav_qbmkG8_ypyK4T/view?usp=sharing) |
+| + Cycle Confusion   | 9.99 | 20.58 | 8.30 | 2.18 | 10.25 | 20.54 | [link](configs/Waymo/R50_FPN_front_right_cycle_conf.yaml)  | [link](https://drive.google.com/file/d/1YyfCp4XhkNoOo22YfiBaduMY4DiY4rtL/view?usp=sharing) |
 
 
 
